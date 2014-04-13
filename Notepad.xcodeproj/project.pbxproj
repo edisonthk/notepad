@@ -22,6 +22,10 @@
 		412214E818FA58DA0091CF7C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412214CC18FA58DA0091CF7C /* CoreData.framework */; };
 		412214F018FA58DA0091CF7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 412214EE18FA58DA0091CF7C /* InfoPlist.strings */; };
 		412214F218FA58DA0091CF7C /* NotepadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 412214F118FA58DA0091CF7C /* NotepadTests.m */; };
+		412214FC18FA59080091CF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412214FB18FA59080091CF7C /* Main.storyboard */; };
+		412214FF18FA59470091CF7C /* NoteListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412214FE18FA59470091CF7C /* NoteListTableViewController.m */; };
+		418C559518FA60560034B617 /* Notes.m in Sources */ = {isa = PBXBuildFile; fileRef = 418C559418FA60560034B617 /* Notes.m */; };
+		418C559818FA655F0034B617 /* NoteEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418C559718FA655F0034B617 /* NoteEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		412214ED18FA58DA0091CF7C /* NotepadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotepadTests-Info.plist"; sourceTree = "<group>"; };
 		412214EF18FA58DA0091CF7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		412214F118FA58DA0091CF7C /* NotepadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotepadTests.m; sourceTree = "<group>"; };
+		412214FB18FA59080091CF7C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		412214FD18FA59470091CF7C /* NoteListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListTableViewController.h; sourceTree = "<group>"; };
+		412214FE18FA59470091CF7C /* NoteListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListTableViewController.m; sourceTree = "<group>"; };
+		418C559318FA60560034B617 /* Notes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notes.h; path = ../Notes.h; sourceTree = "<group>"; };
+		418C559418FA60560034B617 /* Notes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notes.m; path = ../Notes.m; sourceTree = "<group>"; };
+		418C559618FA655F0034B617 /* NoteEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteEditViewController.h; sourceTree = "<group>"; };
+		418C559718FA655F0034B617 /* NoteEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +126,18 @@
 		412214CE18FA58DA0091CF7C /* Notepad */ = {
 			isa = PBXGroup;
 			children = (
+				418C559318FA60560034B617 /* Notes.h */,
+				418C559418FA60560034B617 /* Notes.m */,
 				412214D718FA58DA0091CF7C /* AppDelegate.h */,
 				412214D818FA58DA0091CF7C /* AppDelegate.m */,
 				412214DD18FA58DA0091CF7C /* Images.xcassets */,
 				412214DA18FA58DA0091CF7C /* Notepad.xcdatamodeld */,
 				412214CF18FA58DA0091CF7C /* Supporting Files */,
+				412214FB18FA59080091CF7C /* Main.storyboard */,
+				418C559618FA655F0034B617 /* NoteEditViewController.h */,
+				418C559718FA655F0034B617 /* NoteEditViewController.m */,
+				412214FD18FA59470091CF7C /* NoteListTableViewController.h */,
+				412214FE18FA59470091CF7C /* NoteListTableViewController.m */,
 			);
 			path = Notepad;
 			sourceTree = "<group>";
@@ -228,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412214FC18FA59080091CF7C /* Main.storyboard in Resources */,
 				412214D318FA58DA0091CF7C /* InfoPlist.strings in Resources */,
 				412214DE18FA58DA0091CF7C /* Images.xcassets in Resources */,
 			);
@@ -249,6 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				412214DC18FA58DA0091CF7C /* Notepad.xcdatamodeld in Sources */,
+				418C559518FA60560034B617 /* Notes.m in Sources */,
+				418C559818FA655F0034B617 /* NoteEditViewController.m in Sources */,
+				412214FF18FA59470091CF7C /* NoteListTableViewController.m in Sources */,
 				412214D918FA58DA0091CF7C /* AppDelegate.m in Sources */,
 				412214D518FA58DA0091CF7C /* main.m in Sources */,
 			);
@@ -449,6 +471,7 @@
 				412214F718FA58DA0091CF7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		412214F818FA58DA0091CF7C /* Build configuration list for PBXNativeTarget "NotepadTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +480,7 @@
 				412214FA18FA58DA0091CF7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
